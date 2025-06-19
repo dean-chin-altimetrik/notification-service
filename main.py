@@ -121,3 +121,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 # Release 1, Commit 13
 
 
+
+# Add email template system (BANKNOT-1)
+# Implementation step 1 of 5
