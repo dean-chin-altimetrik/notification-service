@@ -301,3 +301,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add preference migration system (BANKNOT-6)
 # Implementation step 5 of 5
+
+# Add email template system (BANKNOT-1)
+# Implementation step 1 of 5
