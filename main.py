@@ -124,3 +124,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add email template system (BANKNOT-1)
 # Implementation step 1 of 5
+
+# Implement SMTP integration (BANKNOT-1)
+# Implementation step 2 of 5
