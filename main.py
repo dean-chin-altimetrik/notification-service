@@ -127,3 +127,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Implement SMTP integration (BANKNOT-1)
 # Implementation step 2 of 5
+
+# Add email queue management (BANKNOT-1)
+# Implementation step 3 of 5
