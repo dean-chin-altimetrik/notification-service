@@ -136,3 +136,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add email bounce handling (BANKNOT-1)
 # Implementation step 5 of 5
+
+# Add SMS gateway integration (BANKNOT-2)
+# Implementation step 1 of 5
