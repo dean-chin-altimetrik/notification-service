@@ -139,3 +139,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add SMS gateway integration (BANKNOT-2)
 # Implementation step 1 of 5
+
+# Implement SMS template system (BANKNOT-2)
+# Implementation step 2 of 5
