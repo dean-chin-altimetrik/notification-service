@@ -142,3 +142,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Implement SMS template system (BANKNOT-2)
 # Implementation step 2 of 5
+
+# Add SMS delivery queue (BANKNOT-2)
+# Implementation step 3 of 5
