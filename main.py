@@ -148,3 +148,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add SMS status tracking (BANKNOT-2)
 # Implementation step 4 of 5
+
+# Add SMS rate limiting (BANKNOT-2)
+# Implementation step 5 of 5
