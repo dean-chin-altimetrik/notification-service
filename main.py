@@ -331,3 +331,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add SMS rate limiting (BANKNOT-2)
 # Implementation step 5 of 5
+
+# Add push notification infrastructure (BANKNOT-3)
+# Implementation step 1 of 5
