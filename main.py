@@ -157,3 +157,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Implement device token management (BANKNOT-3)
 # Implementation step 2 of 5
+
+# Add push notification delivery (BANKNOT-3)
+# Implementation step 3 of 5
