@@ -160,3 +160,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add push notification delivery (BANKNOT-3)
 # Implementation step 3 of 5
+
+# Add notification payload handling (BANKNOT-3)
+# Implementation step 4 of 5
