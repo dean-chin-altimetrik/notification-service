@@ -166,3 +166,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add push notification analytics (BANKNOT-3)
 # Implementation step 5 of 5
+
+# Add template data models (BANKNOT-4)
+# Implementation step 1 of 5
