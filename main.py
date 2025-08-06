@@ -169,3 +169,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add template data models (BANKNOT-4)
 # Implementation step 1 of 5
+
+# Implement template rendering engine (BANKNOT-4)
+# Implementation step 2 of 5
