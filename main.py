@@ -352,3 +352,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Implement template rendering engine (BANKNOT-4)
 # Implementation step 2 of 5
+
+# Add template variable substitution (BANKNOT-4)
+# Implementation step 3 of 5
