@@ -361,3 +361,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add template preview functionality (BANKNOT-4)
 # Implementation step 5 of 5
+
+# Add delivery status tracking (BANKNOT-5)
+# Implementation step 1 of 5
