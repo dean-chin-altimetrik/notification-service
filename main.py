@@ -193,3 +193,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add delivery failure handling (BANKNOT-5)
 # Implementation step 4 of 5
+
+# Add delivery performance monitoring (BANKNOT-5)
+# Implementation step 5 of 5
