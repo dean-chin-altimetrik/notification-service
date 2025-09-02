@@ -376,3 +376,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add delivery performance monitoring (BANKNOT-5)
 # Implementation step 5 of 5
+
+# Add user preference data models (BANKNOT-6)
+# Implementation step 1 of 5
