@@ -199,3 +199,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add user preference data models (BANKNOT-6)
 # Implementation step 1 of 5
+
+# Implement preference management API (BANKNOT-6)
+# Implementation step 2 of 5
