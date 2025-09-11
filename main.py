@@ -205,3 +205,6 @@ async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
 
 # Add preference validation logic (BANKNOT-6)
 # Implementation step 3 of 5
+
+# Add preference-based filtering (BANKNOT-6)
+# Implementation step 4 of 5
