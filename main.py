@@ -1,0 +1,123 @@
+"""
+Notification Service - Main application entry point
+"""
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel, EmailStr
+from typing import Optional, List
+from datetime import datetime
+from enum import Enum
+import uuid
+
+app = FastAPI(title="Notification Service", version="1.0.0")
+
+
+class NotificationChannel(str, Enum):
+    EMAIL = "email"
+    SMS = "sms"
+    PUSH = "push"
+
+
+class NotificationRequest(BaseModel):
+    recipient: str
+    channel: NotificationChannel
+    subject: str
+    message: str
+    template_id: Optional[str] = None
+
+
+class NotificationResponse(BaseModel):
+    notification_id: str
+    status: str
+    channel: NotificationChannel
+    sent_at: Optional[datetime] = None
+
+
+@app.post("/notifications/send", response_model=NotificationResponse)
+async def send_notification(notification: NotificationRequest):
+    """Send a notification to a recipient"""
+    notification_id = str(uuid.uuid4())
+    return NotificationResponse(
+        notification_id=notification_id,
+        status="sent",
+        channel=notification.channel,
+        sent_at=datetime.now()
+    )
+
+
+@app.get("/notifications/{notification_id}")
+async def get_notification(notification_id: str):
+    """Get notification status"""
+    return {
+        "notification_id": notification_id,
+        "status": "delivered",
+        "channel": "email",
+        "sent_at": datetime.now().isoformat()
+    }
+
+
+@app.get("/notifications")
+async def list_notifications(recipient: Optional[str] = None, limit: int = 10):
+    """List notifications"""
+    return {
+        "notifications": [],
+        "total": 0
+    }
+
+
+# Release 1, Commit 1
+
+# Release 1, Commit 2
+
+# Release 1, Commit 3
+
+# Release 1, Commit 4
+
+# Release 1, Commit 5
+
+# Release 1, Commit 6
+
+# Release 1, Commit 7
+
+# Release 1, Commit 8
+
+# Release 1, Commit 9
+
+# Release 1, Commit 10
+
+# Release 1, Commit 11
+
+# Release 1, Commit 12
+
+# Release 1, Commit 13
+
+# Release 2, Commit 1
+
+# Release 2, Commit 2
+
+# Release 1, Commit 1
+
+# Release 1, Commit 2
+
+# Release 1, Commit 3
+
+# Release 1, Commit 4
+
+# Release 1, Commit 5
+
+# Release 1, Commit 6
+
+# Release 1, Commit 7
+
+# Release 1, Commit 8
+
+# Release 1, Commit 9
+
+# Release 1, Commit 10
+
+# Release 1, Commit 11
+
+# Release 1, Commit 12
+
+# Release 1, Commit 13
+
+
